@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Music, MusicOff } from 'lucide-react';
+import { Music, VolumeX } from 'lucide-react';
 import { useAnimation } from '../contexts/AnimationContext';
 
 const MusicToggle: React.FC = () => {
@@ -20,7 +20,7 @@ const MusicToggle: React.FC = () => {
       {isMusicPlaying ? (
         <Music className="w-5 h-5 text-rose-500" />
       ) : (
-        <MusicOff className="w-5 h-5 text-rose-400/80" />
+        <VolumeX className="w-5 h-5 text-rose-400/80" />
       )}
       
       <span className="absolute left-0 top-0 -translate-y-full -translate-x-1/2 bg-white/90 rounded px-2 py-1 text-xs text-rose-500 shadow opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity whitespace-nowrap">
